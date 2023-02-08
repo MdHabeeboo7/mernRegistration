@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>header}}
+</head>
+<style>
+     .cont{
+    
+   height: 100vh;
+   display: grid;
+    
+/* Change  values  👇 to experiment*/
+   align-content: center;
+   justify-content: center;
+   place-content: center;
+   place-items: center;
+
+}
+.cont a:hover {
+color: green;
+}
+.cont a{
+   margin-bottom: 10px;
+   font-size: 20px;
+}
+img{
+    width: 200px;
+}
+    
+</style>
+<body>
+    <div class="cont">
+        <img src="https://cdn1.vectorstock.com/i/1000x1000/51/95/no-entry-authorised-personnel-only-sign-vector-16715195.jpg" alt="not authorised">
+        <h2>Go and Sign Up and Login and enable cookies to view this page</h2>
+         <a href="/">Back to Home page</a>
+        <a href="register">Register as another user</a>
+        <a href="login">Login as another user</a>
+    </div>
+</body>
+</html>

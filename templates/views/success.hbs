@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+   <style>
+      .box{
+display: flex;  
+gap: 10px;
+ justify-content: center;
+  align-items: center;
+  height: 100vh;       
+      }
+     .cont{
+    
+   height: 100vh;
+   display: grid;
+    
+/* Change  values  👇 to experiment*/
+   align-content: center;
+   justify-content: center;
+   width: auto;
+   
+   place-items: center;
+}
+.cont a{
+   margin-bottom: 10px;
+   font-size: 20px;
+}
+.cont a:hover {
+color: green;
+}
+img{
+    width: 400px;
+}
+.btn{
+   height: fit-content;
+   right: 90px;
+   display: flex;
+   gap: 30px;
+   flex-direction: column;
+   line-height: 10px;
+   justify-content:space-around;
+   background-color: white;
+}
+.btn:hover{
+   background-color: white;
+
+}
+.btn a:hover{
+      color: red;
+}
+.btn a{
+   right: 30px;
+   top: 90px;
+   width: auto;
+   height: 60px;
+   font-size: 20px;
+}
+.btn div {
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
+    
+</style>
+</head>
+
+<body>
+   <div class="box">
+    <div class="cont">
+        <img src="https://www.pngkit.com/png/detail/870-8701158_your-information-has-been-submitted-successfully-thank-you.png" alt="log in successful">
+        <h5>You Have logged in successfully and  </h5> <br>
+       <h5>  your data has stored in our database</h5>
+        <a href="/">Back to Home page</a>
+        <a href="register">Register as another user</a>
+        <a href="login">Login as another user</a>
+        <a href="secret">Authorised page</a>
+    </div>
+    <div class="btn">
+      <div><a href="/logout">Logout</a></div>
+      <div> <a href="/logoutALL">Logout From All devices</a></div>
+     
+    </div>
+    </div>
+</body>
+</html>
