@@ -1,13 +1,11 @@
 {
   "version": 2,
   "name": "registration",
-  "builds": [{ "src": "./src/app.js", "use": "@vercel/node" }],
+  "builds": [{ "src": "src/app.js", "use": "@vercel/node" }],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "src": "/*",
+      "dest": "/templates/views/index.ejs"
     }
   ]
 }
-
-  
