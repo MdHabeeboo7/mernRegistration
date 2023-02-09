@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
    {{>header}}
+   {{>style}}
    <style>
       .box{
 display: flex;  
-gap: 10px;
+gap: 0.10rem;
  justify-content: center;
   align-items: center;
   height: 100vh;       
@@ -23,22 +24,22 @@ gap: 10px;
    place-items: center;
 }
 .cont a{
-   margin-bottom: 10px;
-   font-size: 20px;
+   margin-bottom: 0.10rem;
+   font-size: 0.20rem;
 }
 .cont a:hover {
 color: green;
 }
 img{
-    width: 400px;
+    width: 4.00rem;
 }
 .btn{
    height: fit-content;
-   right: 90px;
+   right: 0.90rem;
    display: flex;
-   gap: 30px;
+   gap: 0.30rem;
    flex-direction: column;
-   line-height: 10px;
+   line-height: 0.10rem;
    justify-content:space-around;
    background-color: white;
 }
@@ -50,17 +51,37 @@ img{
       color: red;
 }
 .btn a{
-   right: 30px;
-   top: 90px;
+   right: 0.30rem;
+   top: 0.90rem;
    width: auto;
-   height: 60px;
-   font-size: 20px;
+   height: 0.60rem;
+   font-size: 0.20rem;
 }
 .btn div {
    justify-content: space-between;
-   margin-bottom: 40px;
+   margin-bottom: 0.40rem;
 }
-    
+   @media(max-width:768px){
+    .cont a, .btn a{
+      font-size: 15px;
+    }
+    .cont img{
+width: 80px;
+    }
+    .btn div {
+   justify-content: space-between;
+   margin-bottom: 20px;
+   height: max-content;
+}
+.btn div a{
+   display: inline-block;
+   height: fit-content;
+   margin-bottom: 10px;
+}
+.cont a{
+   margin-top: 10px;
+}
+} 
 </style>
 </head>
 
@@ -77,7 +98,7 @@ img{
     </div>
     <div class="btn">
       <div><a href="/logout">Logout</a></div>
-      <div> <a href="/logoutALL">Logout From All devices</a></div>
+      <div> <a href="/logoutALL">Logout From all devices</a></div>
      
     </div>
     </div>
